@@ -42,18 +42,23 @@ section#login{
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px black;
+
+    transition: width .3s, height .3s;
+    animation-timing-function: ease;
+    
 }
 
 section#login > div#imagem{
     display: block;
     background: var(--mainColor2) url(../imagens/imagem.jpg);
     background-position: bottom center;
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 200px;
-    width: 250px;
 }
 
 section#login > div#formulario{
     display: block;
     padding: 10px;
+    font-size: 20px;
 }

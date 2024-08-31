@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/*
+             Device Breakpoint
+-----------------------------------------------
+    Muito pequeno: 320px (smartphones pequenos)
+    Pequeno: 480px (smartphones em modo paisagem)
+    Médio: 768px (tablets)
+    Grande: 992px (notebooks e desktops menores)
+    Muito grande: 1200px (desktops)
+    Extra grande: 1440px (monitores de alta resolução)
+*/
+
+/*
+    Colors:
+        mainColors: #082E1F, #175c35, #061F1B;
+        details: #ffffff (white), #000000 (black);  
+*/
+
+:root{
+    --mainColor1: #082E1F;
+    --mainColor2: #175c35;
+    --mainColor3: #061F1B;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /*Tablets*/
+
+    body {
+        background-image: linear-gradient(to right,var(--mainColor2), var(--mainColor1));
+    }
+
+    section#login{
+        width: 80vw;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /*Notebook e Desktops menores*/
+
+    body{
+    background-image: linear-gradient(to right,var(--mainColor2), var(--mainColor1));
+    }
+
+    section#login{
+        width: 920px;
+    }
+
+    section#login > div#imagem{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#login > div#formulario{
+        float: right;
+        width: 50%;
+    }
+}

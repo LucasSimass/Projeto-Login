@@ -7,58 +7,59 @@
 */
 
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
 }
 
-:root{
-    --mainColor1: #082E1F;
-    --mainColor2: #175c35;
-    --mainColor3: #061F1B;
+:root {
+  --mainColor1: #082e1f;
+  --mainColor2: #175c35;
+  --mainColor3: #061f1b;
 }
 
-body, html{
-    background-color: var(--mainColor2);
-    height: 100vh;
-    width: 100vw;
+body,
+html {
+  background-color: var(--mainColor2);
+  height: 100vh;
+  width: 100vw;
 }
 
-main{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
 }
 
-section#login{
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
-    background-color: white;
-    width: 250px;
-    height: 500px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px black;
+section#login {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  width: 250px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px black;
 
-    transition: width .3s, height .3s;
-    animation-timing-function: ease;
-    
+  transition: width 0.3s, height 0.3s;
+  animation-timing-function: ease;
 }
 
-section#login > div#imagem{
-    display: block;
-    background: var(--mainColor2) url(../imagens/imagem.jpg);
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
+section#login > div#imagem {
+  display: block;
+  background: var(--mainColor2) url(../imagens/imagem.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
 }
 
-section#login > div#formulario{
-    display: block;
-    padding: 10px;
-    font-size: 20px;
+section#login > div#formulario {
+  display: block;
+  padding: 10px;
+  font-size: 20px;
 }

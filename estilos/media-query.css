@@ -17,54 +17,79 @@
         details: #ffffff (white), #000000 (black);  
 */
 
-:root{
-    --mainColor1: #082E1F;
-    --mainColor2: #175c35;
-    --mainColor3: #061F1B;
+:root {
+  --mainColor1: #082e1f;
+  --mainColor2: #175c35;
+  --mainColor3: #061f1b;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  /*Celulares*/
+
+  section#login {
+    width: 400px;
+  }
+
+  section#login > div#formulario {
+    font-size: 1em;
+  }
+
+  section#login > div#formulario > h1 {
+    font-size: 1.7em;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    /*Tablets*/
+  /*Tablets*/
 
-    body {
-        background-image: linear-gradient(to right,var(--mainColor2), var(--mainColor1));
-    }
+  body {
+    background-image: linear-gradient(
+      to bottom,
+      var(--mainColor2),
+      var(--mainColor1)
+    );
+  }
 
-    section#login{
-        width: 80vw;
-    }
+  section#login {
+    width: 80vw;
+  }
 
-    section#login > div#imagem {
-        float: left;
-        width: 30%;
-        height: 100%;
-    }
+  section#login > div#imagem {
+    float: left;
+    width: 30%;
+    height: 100%;
+  }
 
-    section#login > div#formulario {
-        float: right;
-        width: 70%;
-    }
+  section#login > div#formulario {
+    float: right;
+    width: 70%;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    /*Notebook e Desktops menores*/
+  /*Notebook pra cima*/
 
-    body{
-    background-image: linear-gradient(to right,var(--mainColor2), var(--mainColor1));
-    }
+  body {
+    background-image: linear-gradient(
+      to bottom,
+      var(--mainColor2),
+      var(--mainColor1)
+    );
+  }
 
-    section#login{
-        width: 920px;
-    }
+  section#login {
+    width: 920px;
+  }
 
-    section#login > div#imagem{
-        float: left;
-        width: 50%;
-        height: 100%;
-    }
+  section#login > div#imagem {
+    float: left;
+    width: 50%;
+    height: 100%;
+  }
 
-    section#login > div#formulario{
-        float: right;
-        width: 50%;
-    }
+  section#login > div#formulario {
+    float: right;
+    width: 50%;
+  }
 }

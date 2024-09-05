@@ -24,7 +24,7 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  /*Celulares*/
+  /*CELULARES*/
 
   section#login {
     width: 300px;
@@ -38,10 +38,15 @@
     font-size: 1.7em;
     text-align: center;
   }
+
+  form > div > input#submitButton {
+    font-size: 20px;
+  }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  /*Tablets*/
+  /*TABLETS*/
 
   body {
     background-image: linear-gradient(
@@ -53,6 +58,7 @@
 
   section#login {
     width: 80vw;
+    height: 330px;
   }
 
   section#login > div#imagem {
@@ -65,10 +71,34 @@
     float: right;
     width: 70%;
   }
+
+  div.campo > span {
+    width: 45px;
+    background-color: none;
+    transform: translateY(-4px);
+  }
+
+  div.campo > input {
+    width: calc(100% - 51px);
+    padding-left: 4px;
+    text-align: left;
+    height: 101%;
+    transform: translateY(-16.8px);
+  }
+
+  form > div > a#forgotpassword{
+    height: 29px;
+    font-size: 18px;
+  }
+
+  form > div > a#forgotpassword > p{
+    margin-top: -3px;
+  }
+
 }
 
 @media screen and (min-width: 992px) {
-  /*Notebook pra cima*/
+  /*NOTEBOOK, DESKTOP E SUPERIORES*/
 
   body {
     background-image: linear-gradient(
@@ -92,4 +122,13 @@
     float: right;
     width: 50%;
   }
+
+  form > div > a#forgotpassword {
+    height: 29px;
+} 
+
+  form > div > a#forgotpassword > p {
+      margin-top: -3px;
+      font-size: 0.9em;
+  } 
 }

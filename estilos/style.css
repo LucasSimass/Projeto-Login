@@ -1,11 +1,14 @@
 @charset "UTF-8";
 
+/*!!! MOBILE FIRST !!!*/
+
 /*
     Colors:
         mainColors: #082E1F, #175c35, #061F1B;
         details: #ffffff (white), #000000 (black);  
 */
 
+/* ALL */
 * {
   margin: 0px;
   padding: 0px;
@@ -14,12 +17,14 @@
   box-sizing: border-box;
 }
 
+/* THE MAIN COLORS (some of the blocks have the color with more light or darker) */
 :root {
   --mainColor1: #082e1f;
   --mainColor2: #175c35;
   --mainColor3: #061f1b;
 }
 
+/* BODY AND HTML */ 
 body,
 html {
   background-color: var(--mainColor2);
@@ -27,39 +32,151 @@ html {
   width: 100vw;
 }
 
+/* MAIN (obviously -_-)*/
 main {
   position: relative;
   height: 100vh;
   width: 100vw;
 }
 
+/*-----------------------------------*/
+
+/* BLOCK LOGIN (The card of our Form, the image is include)*/ 
 section#login {
   position: absolute;
-  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   background-color: white;
   width: 250px;
-  height: 500px;
+  height: 450px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0px 0px 10px black;
 
+  transform: translate(-50%, -50%);
   transition: width 0.3s, height 0.3s;
   animation-timing-function: ease;
 }
 
+/*-----------------------------------*/
+
+/*BLOCKS OF E-MAIL AND PASSOWORD (every div with campo class)*/
+form > div.campo{
+  display: block;
+  background-color: #082e1f;
+  border-radius: 8px;
+  height: 40px;
+  margin: 5px 0px;
+  width: 100%;
+}
+
+/* Label of the fields */
+div.campo > label{
+  display: none;
+}
+
+/* Icons OF The Fields */
+div.campo > span {
+  color: white;
+  border-radius: 8px 0px 0px 8px;
+  font-size: 2em;
+  width: 36px;
+  padding: 5px;
+  padding-right: 20px;
+  height: 100%;
+}
+
+/* Inputs */
+div.campo > input {
+  background-color: #bde9d3;
+  font-size: 1em;
+  width: calc(100% - 40.4px);
+  height: 101%;
+  border-radius: 8px;
+  padding: 5px;
+  padding-left: 20px;
+  transform: translateY(-10.3px);
+}
+
+div.campo > input:focus-within {
+  background-color: white;
+  border: 0px;
+}
+
+/*-----------------------------------*/
+
+/* IMAGE BLOCK */
 section#login > div#imagem {
   display: block;
   background: var(--mainColor2) url(../imagens/imagem.jpg);
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 200px;
+  height: 150px;
 }
 
+/*-----------------------------------*/
+
+/* FORM BLOCK */
 section#login > div#formulario {
   display: block;
   padding: 10px;
   font-size: 20px;
+}
+
+/*-----------------------------------*/
+
+/* SUBMIT BUTTON BLOCK */
+form > div > input[type=submit]{
+    display: block;
+    background-color: var(--mainColor2);
+    border: 2px solid black;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+}
+
+/* Submit Buttom (onHover)*/ 
+form > div > input[type=submit]:hover{
+    background-color: var(--mainColor1);
+}
+
+/* Submit Buttom (onActive)*/ 
+form > div > input[type=submit]:active{
+    background-color: var(--mainColor3);
+}
+
+/*-----------------------------------*/
+
+/* FORGOT PASSWORD BLOCK*/
+form > div > a#forgotpassword{
+    display: block;
+    background-color: white;
+    border: 2px solid black;  
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 3px;
+    width: 100%;
+    height: 32px;
+}
+
+
+/* Forgot Passoword (onHover) */ 
+form > div > a#forgotpassword:hover{
+    background-color: #23b663;
+    text-decoration: underline;
+}
+
+/* Forgot Passoword (onActive) */ 
+form > div > a#forgotpassword:active{
+    background-color: #0e6d37;
+    text-decoration: underline;
 }
